@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABADAN SPORT — Спортивная форма на заказ | Производство в Турции, доставка по всему СНГ</title>
+<meta name="description" content="ABADAN SPORT — пошив спортивной формы на заказ. Собственный цех в Турции, уникальный дизайн, доставка по всему СНГ. Футбол, баскетбол, волейбол, MMA и другие виды спорта.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0C1320;
+  --ink-soft:#1A2436;
+  --paper:#F4F6F9;
+  --white:#FFFFFF;
+  --red:#E8362F;
+  --red-dark:#C42820;
+  --steel:#5C6B82;
+  --line:#E1E6EE;
+  --wa:#25D366;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.display{font-family:'Russo One',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.02em}
+.container{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:88px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--red);transform:skewX(-20deg)}
+h2.section-title{font-family:'Russo One',sans-serif;font-size:clamp(28px,4vw,44px);text-transform:uppercase;line-height:1.12;margin-bottom:16px}
+.section-lead{color:var(--steel);font-size:17px;max-width:640px;margin-bottom:44px}
+
+/* ---------- HEADER ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(12,19,32,.96);backdrop-filter:blur(10px);color:#fff}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{width:40px;height:40px;flex:none;background:var(--red);clip-path:polygon(0 100%,50% 0,100% 100%,72% 100%,50% 56%,28% 100%);}
+.logo-text{font-family:'Russo One',sans-serif;font-size:19px;text-transform:uppercase;line-height:1.05}
+.logo-text span{color:var(--red)}
+nav.main-nav{display:flex;gap:28px;font-weight:600;font-size:15px}
+nav.main-nav a{opacity:.85;transition:.2s}
+nav.main-nav a:hover{opacity:1;color:var(--red)}
+.header-contacts{display:flex;align-items:center;gap:14px}
+.header-phone{font-family:'Russo One',sans-serif;font-size:16px;white-space:nowrap}
+.icon-btn{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.1);transition:.2s}
+.icon-btn:hover{background:var(--red)}
+.icon-btn svg{width:19px;height:19px;fill:#fff}
+.burger{display:none;background:none;border:0;cursor:pointer;width:42px;height:42px}
+.burger span{display:block;width:24px;height:2.5px;background:#fff;margin:5px auto;border-radius:2px;transition:.25s}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;padding:110px 0 130px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(115deg,rgba(232,54,47,.16) 0%,transparent 45%),
+  repeating-linear-gradient(115deg,transparent 0 120px,rgba(255,255,255,.025) 120px 122px);}
+.hero::after{content:none}
+.hero-in{position:relative;max-width:760px}
+.hero-tag{display:inline-block;padding:8px 16px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px;color:#fff}
+.hero-tag b{color:var(--red)}
+.hero h1{font-family:'Russo One',sans-serif;font-size:clamp(36px,6vw,66px);line-height:1.06;text-transform:uppercase;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero-list{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:38px;color:#C7D0DE;font-size:16px;font-weight:500}
+.hero-list li{list-style:none;display:flex;align-items:center;gap:9px}
+.hero-list li::before{content:"";width:8px;height:8px;background:var(--red);transform:skewX(-18deg)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 32px;border-radius:12px;font-weight:800;font-size:16px;cursor:pointer;border:0;transition:.2s;text-transform:uppercase;letter-spacing:.03em}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 30px rgba(232,54,47,.35)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 30px rgba(37,211,102,.3)}
+.btn-wa:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{border-color:#fff}
+.hero-stats{position:relative;display:flex;flex-wrap:wrap;gap:0;margin-top:64px;border-top:1px solid rgba(255,255,255,.14)}
+.hero-stat{padding:26px 36px 0 0;margin-right:36px}
+.hero-stat b{font-family:'Russo One',sans-serif;font-size:30px;display:block;color:#fff}
+.hero-stat span{font-size:14px;color:#92A0B5}
+
+/* ---------- SPORTS ---------- */
+.sports-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sport-card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px 26px;overflow:hidden;transition:.25s;cursor:pointer}
+.sport-card::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:4px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:.3s}
+.sport-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(12,19,32,.10)}
+.sport-card:hover::after{transform:scaleX(1)}
+.sport-num{font-family:'Russo One',sans-serif;font-size:15px;color:var(--red);margin-bottom:14px}
+.sport-icon{font-size:34px;margin-bottom:14px;line-height:1}
+.sport-card h3{font-family:'Russo One',sans-serif;font-size:18px;text-transform:uppercase;margin-bottom:8px}
+.sport-card p{font-size:14px;color:var(--steel)}
+
+/* ---------- ADVANTAGES ---------- */
+.adv{background:var(--ink);color:#fff;clip-path:polygon(0 0,100% 38px,100% 100%,0 calc(100% - 38px));padding:120px 0}
+.adv .eyebrow{color:var(--red)}
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.adv-card{background:var(--ink-soft);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:30px 26px}
+.adv-card .a-icon{width:52px;height:52px;border-radius:12px;background:rgba(232,54,47,.15);display:grid;place-items:center;margin-bottom:18px}
+.adv-card .a-icon svg{width:26px;height:26px;fill:var(--red)}
+.adv-card h3{font-family:'Russo One',sans-serif;font-size:17px;text-transform:uppercase;margin-bottom:10px}
+.adv-card p{font-size:14.5px;color:#A6B1C2}
+
+/* ---------- WORKSHOP ---------- */
+.workshop-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.workshop-visual{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--ink);min-height:420px;display:flex;align-items:flex-end;
+  background-image:
+    linear-gradient(20deg,rgba(12,19,32,.92) 30%,rgba(12,19,32,.35)),
+    repeating-linear-gradient(-35deg,#16202F 0 26px,#121A28 26px 52px);}
+.workshop-visual .ws-badge{position:absolute;top:24px;left:24px;background:var(--red);color:#fff;font-family:'Russo One',sans-serif;font-size:13px;text-transform:uppercase;padding:9px 16px;border-radius:8px;letter-spacing:.06em}
+.workshop-visual .ws-inner{padding:32px;color:#fff}
+.workshop-visual .ws-inner b{font-family:'Russo One',sans-serif;font-size:24px;display:block;margin-bottom:6px;text-transform:uppercase}
+.workshop-visual .ws-inner span{color:#A6B1C2;font-size:15px}
+.workshop-points{margin-top:30px;display:grid;gap:16px}
+.wp{display:flex;gap:16px;align-items:flex-start}
+.wp-n{font-family:'Russo One',sans-serif;color:var(--red);font-size:17px;min-width:34px;padding-top:2px}
+.wp b{display:block;font-size:16px;margin-bottom:3px}
+.wp p{font-size:14.5px;color:var(--steel)}
+
+/* ---------- STEPS ---------- */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:step}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;position:relative}
+.step-n{font-family:'Russo One',sans-serif;font-size:46px;color:transparent;-webkit-text-stroke:1.6px var(--red);margin-bottom:14px;line-height:1}
+.step h3{font-family:'Russo One',sans-serif;font-size:16px;text-transform:uppercase;margin-bottom:12px}
+.step ul{list-style:none;display:grid;gap:8px}
+.step li{font-size:14px;color:var(--steel);padding-left:16px;position:relative}
+.step li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;background:var(--red);transform:skewX(-18deg)}
+
+/* ---------- CTA ---------- */
+.cta-band{background:var(--red);color:#fff;border-radius:20px;padding:54px 48px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta-band::after{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;background:rgba(255,255,255,.12);clip-path:polygon(0 100%,50% 0,100% 100%,72% 100%,50% 56%,28% 100%)}
+.cta-band h2{font-family:'Russo One',sans-serif;font-size:clamp(24px,3.4vw,36px);text-transform:uppercase;line-height:1.15;max-width:560px}
+.cta-band p{margin-top:10px;opacity:.92;font-size:16px}
+.cta-band .btn{background:#fff;color:var(--ink)}
+.cta-band .btn:hover{background:var(--ink);color:#fff}
+
+/* ---------- CONTACTS / FOOTER ---------- */
+.contacts{background:var(--ink);color:#fff;padding:90px 0 0;clip-path:polygon(0 38px,100% 0,100% 100%,0 100%)}
+.contacts-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:start;padding-top:30px}
+.contact-row{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.contact-row .icon-btn{background:rgba(232,54,47,.16)}
+.contact-row .icon-btn svg{fill:var(--red)}
+.contact-row b{font-family:'Russo One',sans-serif;font-size:18px;display:block}
+.contact-row span{font-size:13.5px;color:#92A0B5}
+.contact-actions{display:grid;gap:14px}
+.footer-bottom{margin-top:70px;border-top:1px solid rgba(255,255,255,.1);padding:24px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13.5px;color:#7A8699}
+
+/* ---------- FLOATING WHATSAPP ---------- */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:90;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 32px rgba(37,211,102,.45);transition:.25s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--wa);opacity:.5;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(.9);opacity:.6}100%{transform:scale(1.3);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wa-float::before{animation:none}*{transition:none!important}}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:1000px){
+  .sports-grid{grid-template-columns:repeat(2,1fr)}
+  .adv-grid{grid-template-columns:repeat(2,1fr)}
+  .steps-grid{grid-template-columns:repeat(2,1fr)}
+  .workshop-wrap,.contacts-grid{grid-template-columns:1fr}
+  nav.main-nav{display:none}
+  .header-phone{display:none}
+}
+@media(max-width:760px){
+  section{padding:64px 0}
+  .hero{padding:80px 0 90px}
+  .burger{display:block}
+  .header-contacts .icon-btn:not(.wa-head){display:none}
+  nav.main-nav{position:fixed;inset:72px 0 auto 0;background:var(--ink);flex-direction:column;padding:24px;gap:18px;display:none}
+  nav.main-nav.open{display:flex}
+  .hero-stat{padding-right:0;margin-right:24px}
+  .cta-band{padding:40px 28px}
+}
+@media(max-width:520px){
+  .sports-grid,.adv-grid,.steps-grid{grid-template-columns:1fr}
+}
+a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="container header-in">
+    <a href="#main" class="logo" aria-label="Abadan Sport — на главную">
+      <img src="assets/logo.png" alt="Abadan Sport" style="height:52px;width:auto">
+      <span class="logo-text">Abadan<br><span>Sport</span></span>
+    </a>
+    <nav class="main-nav" id="nav">
+      <a href="#main">Главная</a>
+      <a href="#sports">Виды спорта</a>
+      <a href="#workshop">Производство</a>
+      <a href="#steps">Как мы работаем</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-contacts">
+      <a class="header-phone" href="tel:+77783244440">+7 778 324 44 40</a>
+      <a class="icon-btn wa-head" href="https://wa.me/77783244440" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6c-3-1.3-5-4.4-5.1-4.6-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.3-.3.6-.4.9-.4h.6c.2 0 .5-.1.7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.4Z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.instagram.com/abadansport" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1a2 2 0 0 0-1.1-.7c-.3-.1-.7-.3-1.8-.3-1.3-.1-1.7-.1-4.8-.1Zm0 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm5.2-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="main" style="padding-top:110px">
+  <img src="assets/logo.png" alt="" aria-hidden="true" style="position:absolute;right:4%;top:50%;transform:translateY(-50%) rotate(-6deg);height:78%;max-height:520px;width:auto;opacity:.10;pointer-events:none">
+  <div class="container hero-in">
+    <span class="hero-tag">Собственный цех в Турции <b>•</b> Доставка по всему СНГ</span>
+    <h1>Спортивная форма <em>на заказ</em> для вашей команды</h1>
+    <ul class="hero-list">
+      <li>Игровые формы и спортивные костюмы</li>
+      <li>Уникальный дизайн под вашу команду</li>
+      <li>Турецкие ткани и качество пошива</li>
+      <li>Сублимационная печать — не выгорает и не трескается</li>
+    </ul>
+    <div class="hero-cta">
+      <a class="btn btn-wa" href="https://wa.me/77783244440?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D1%83" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6c-3-1.3-5-4.4-5.1-4.6-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.3-.3.6-.4.9-.4h.6c.2 0 .5-.1.7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.4Z"/></svg>
+        Написать в WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#sports">Виды спорта</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>Турция</b><span>собственное производство</span></div>
+      <div class="hero-stat"><b>СНГ</b><span>работаем по всем странам</span></div>
+      <div class="hero-stat"><b>от 10 шт</b><span>минимальный заказ</span></div>
+      <div class="hero-stat"><b>100%</b><span>индивидуальный дизайн</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPORTS ================= -->
+<section id="sports">
+  <div class="container">
+    <span class="eyebrow">Направления</span>
+    <h2 class="section-title">Шьём форму для любого вида спорта</h2>
+    <p class="section-lead">Производим экипировку для команд любого уровня — от любительских клубов и школ до профессиональных команд и турниров.</p>
+    <div class="sports-grid">
+      <div class="sport-card"><div class="sport-icon">⚽</div><h3>Футбол</h3><p>Игровые комплекты, гетры, вратарская форма</p></div>
+      <div class="sport-card"><div class="sport-icon">🏀</div><h3>Баскетбол</h3><p>Майки и шорты с двусторонним вариантом</p></div>
+      <div class="sport-card"><div class="sport-icon">🏐</div><h3>Волейбол</h3><p>Мужские и женские комплекты, форма либеро</p></div>
+      <div class="sport-card"><div class="sport-icon">🥊</div><h3>MMA и бокс</h3><p>Рашгарды, шорты, экипировка для единоборств</p></div>
+      <div class="sport-card"><div class="sport-icon">🏉</div><h3>Регби</h3><p>Усиленные джерси из плотных тканей</p></div>
+      <div class="sport-card"><div class="sport-icon">🏃</div><h3>Бег</h3><p>Лёгкая дышащая форма для беговых клубов</p></div>
+      <div class="sport-card"><div class="sport-icon">🏒</div><h3>Хоккей</h3><p>Свитеры и гамаши с командным дизайном</p></div>
+      <div class="sport-card"><div class="sport-icon">🧥</div><h3>Спортивные костюмы</h3><p>Парадные и тренировочные костюмы команды</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADVANTAGES ================= -->
+<section class="adv">
+  <div class="container">
+    <span class="eyebrow">Почему мы</span>
+    <h2 class="section-title">Наши преимущества</h2>
+    <div class="adv-grid">
+      <div class="adv-card">
+        <div class="a-icon"><svg viewBox="0 0 24 24"><path d="M12 2 2 7v2h20V7L12 2Zm-8 9v8H2v2h20v-2h-2v-8h-3v8h-3v-8h-4v8H7v-8H4Z"/></svg></div>
+        <h3>Собственный цех в Турции</h3>
+        <p>Полный цикл производства под нашим контролем: от ткани до готового комплекта. Без посредников и перекупщиков.</p>
+      </div>
+      <div class="adv-card">
+        <div class="a-icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4Zm-1 13-3-3 1.4-1.4L11 12.2l4.6-4.6L17 9l-6 6Z"/></svg></div>
+        <h3>Турецкое качество тканей</h3>
+        <p>Используем профессиональные дышащие ткани, которые держат форму, не выгорают и выдерживают сотни стирок.</p>
+      </div>
+      <div class="adv-card">
+        <div class="a-icon"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3v13h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-6l-3-3ZM8 18.5A1.5 1.5 0 1 1 9.5 17 1.5 1.5 0 0 1 8 18.5Zm10 0A1.5 1.5 0 1 1 19.5 17 1.5 1.5 0 0 1 18 18.5ZM17 12V9.5h2.5L21 12h-4Z"/></svg></div>
+        <h3>Доставка по всему СНГ</h3>
+        <p>Казахстан, Россия, Узбекистан, Кыргызстан и другие страны — надёжно упакуем и отправим вашу форму в любой город.</p>
+      </div>
+      <div class="adv-card">
+        <div class="a-icon"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3Zm1 5v4.6l3.5 2-1 1.7L11 13.7V8h2Z"/></svg></div>
+        <h3>Чёткие сроки</h3>
+        <p>Производство занимает 10–20 дней с момента согласования дизайна. Сообщаем статус заказа на каждом этапе.</p>
+      </div>
+      <div class="adv-card">
+        <div class="a-icon"><svg viewBox="0 0 24 24"><path d="m12 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3l-4.8 2.6.9-5.4-3.9-3.8 5.4-.8L12 2Z"/></svg></div>
+        <h3>Уникальный дизайн</h3>
+        <p>Разрабатываем макет под вашу команду: цвета, логотипы, спонсоры, номера и фамилии игроков. Правки — до полного согласования.</p>
+      </div>
+      <div class="adv-card">
+        <div class="a-icon"><svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-8 1a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 8 12Zm8 1c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4Zm-8 1.2A9.6 9.6 0 0 0 0 18v3h6v-3a5.6 5.6 0 0 1 2-4.8Z"/></svg></div>
+        <h3>От 10 комплектов</h3>
+        <p>Работаем и с небольшими командами, и с крупными тиражами для школ, клубов, компаний и турниров.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORKSHOP ================= -->
+<section id="workshop">
+  <div class="container workshop-wrap">
+    <div class="workshop-visual">
+      <span class="ws-badge">Made in Türkiye</span>
+      <div class="ws-inner">
+        <b>Производственный цех</b>
+        <span>Современное оборудование, опытные мастера и полный цикл пошива — от раскроя до упаковки.</span>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">Производство</span>
+      <h2 class="section-title">Собственный цех в Турции</h2>
+      <p class="section-lead" style="margin-bottom:8px">Турция — один из мировых центров текстильного производства. Наш цех находится в самом сердце этой индустрии, и это даёт нам прямой доступ к лучшим тканям и технологиям.</p>
+      <div class="workshop-points">
+        <div class="wp"><span class="wp-n">01</span><div><b>Полный цикл производства</b><p>Дизайн, печать, раскрой, пошив и контроль качества — всё в одном месте.</p></div></div>
+        <div class="wp"><span class="wp-n">02</span><div><b>Сублимационная печать</b><p>Рисунок становится частью ткани: не выгорает, не трескается и не стирается.</p></div></div>
+        <div class="wp"><span class="wp-n">03</span><div><b>Контроль качества каждого комплекта</b><p>Перед отправкой проверяем швы, печать и размеры. Присылаем фото- и видеоотчёт.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section id="steps" style="padding-top:0">
+  <div class="container">
+    <span class="eyebrow">Процесс</span>
+    <h2 class="section-title">Как мы работаем</h2>
+    <p class="section-lead">От первого сообщения до готовой формы — всего четыре шага.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-n">01</div>
+        <h3>Заявка и консультация</h3>
+        <ul>
+          <li>Пишете нам в WhatsApp или звоните</li>
+          <li>Подбираем ткань и модель</li>
+          <li>Обсуждаем цвета, логотипы, номера и фамилии</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <h3>Разработка дизайна</h3>
+        <ul>
+          <li>Готовим макет вашей формы</li>
+          <li>Вносим правки</li>
+          <li>Финально согласовываем дизайн</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <h3>Производство</h3>
+        <ul>
+          <li>Запускаем пошив в нашем цеху в Турции</li>
+          <li>Держим вас в курсе на каждом этапе</li>
+          <li>Проверяем качество каждого комплекта</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <h3>Доставка</h3>
+        <ul>
+          <li>Фото- и видеоотчёт готового заказа</li>
+          <li>Надёжная упаковка</li>
+          <li>Отправка в любую страну СНГ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Готовы одеть вашу команду?</h2>
+        <p>Напишите нам — проконсультируем, посчитаем стоимость и предложим лучшее решение.</p>
+      </div>
+      <a class="btn" href="https://wa.me/77783244440?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B" target="_blank" rel="noopener">Получить расчёт</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTS / FOOTER ================= -->
+<footer class="contacts" id="contacts">
+  <div class="container">
+    <div class="contacts-grid">
+      <div>
+        <span class="eyebrow">Контакты</span>
+        <h2 class="section-title">Связаться с нами</h2>
+        <div class="contact-row">
+          <span class="icon-btn"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.3 1l-2.2 2.2Z"/></svg></span>
+          <div><b><a href="tel:+77783244440">+7 778 324 44 40</a></b><span>Звонки и WhatsApp</span></div>
+        </div>
+        <div class="contact-row">
+          <span class="icon-btn"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 4.8a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Zm5.2-2.9a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"/></svg></span>
+          <div><b><a href="https://www.instagram.com/abadansport" target="_blank" rel="noopener">@abadansport</a></b><span>Наши работы в Instagram</span></div>
+        </div>
+        <div class="contact-row" style="border-bottom:0">
+          <span class="icon-btn"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 3-3 3 3 0 0 1-3 3Z"/></svg></span>
+          <div><b>Производство — Турция</b><span>Доставка по всему СНГ</span></div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-wa" href="https://wa.me/77783244440" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6c-3-1.3-5-4.4-5.1-4.6-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.3-.3.6-.4.9-.4h.6c.2 0 .5-.1.7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.4Z"/></svg>
+          Написать в WhatsApp
+        </a>
+        <a class="btn btn-red" href="tel:+77783244440">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.3 1l-2.2 2.2Z"/></svg>
+          Позвонить
+        </a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/abadansport" target="_blank" rel="noopener">Instagram @abadansport</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <img src="assets/logo.png" alt="Abadan Sport" style="height:64px;width:auto;opacity:.9">
+      <span>© 2026 ABADAN SPORT — спортивная форма на заказ</span>
+      <span>Собственный цех в Турции • Доставка по всему СНГ</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a class="wa-float" href="https://wa.me/77783244440?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6c-3-1.3-5-4.4-5.1-4.6-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.3-.3.6-.4.9-.4h.6c.2 0 .5-.1.7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.4Z"/></svg>
+</a>
+
+<script>
+const burger=document.getElementById('burger');
+const nav=document.getElementById('nav');
+burger.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
